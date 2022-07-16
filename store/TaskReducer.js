@@ -23,17 +23,14 @@ function TaskReducer(state = initial, action) {
             ...state,
             taskInput: action.payload
           }
-  
       case 'CREATE_TASK':
         return { 
             ...state,
             task: [ ...state.task, action.payload]
           }
-  
       default:
         return state 
     }
   }
   
-
 export default TaskReducer;
